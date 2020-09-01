@@ -7,16 +7,25 @@ const Home = ({ name, paragraph, authorImage }) => {
 		<div>
 			<div className='home_container'>
 				<div className='home_head_wrapper'>
-					<Typist avgTypingDelay={100}>
-						<h1>
-							Hi, I am Anthony.
+					<h1>
+						Hi, I am Anthony.
+						<Typist
+							avgTypingDelay={120}
+							cursor={{
+								show: false,
+								blink: false,
+								element: '|',
+								hideWhenDone: false,
+							}}>
 							<span className='spanny'>
-								A recent bootcamp Gra <Typist.Backspace count={20} delay={200} />
-								software developer 
+								A recent bootcamp Gra{' '}
+								<Typist.Backspace count={20} delay={200} />
+								software developer
 							</span>
 							From New York
-						</h1>
-					</Typist>
+						</Typist>
+					</h1>
+
 					<p>{paragraph}</p>
 				</div>
 				<div className='image_container'>

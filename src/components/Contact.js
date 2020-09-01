@@ -5,12 +5,17 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaCodepen } from 'react-icons/fa';
 const Contact = ({ contactEmail, contactPara, socialLinks }) => {
 	return (
 		<div className='contact_container'>
-			<h1>Get in touch.</h1>
+		
+				<h1>lets get in touch.</h1>
+			
+
 			<p>{contactPara}</p>
 			<br></br>
-			<a className='email_link' href={`mailto:${contactEmail}`}>
-				{contactEmail}
-			</a>
+			<div className='background-two link-container'>
+				<a className='link-two' href={`mailto:${contactEmail}`}>
+					{contactEmail}
+				</a>
+			</div>
 			<div className='social_links'>
 				<ul>
 					<li>
@@ -26,11 +31,6 @@ const Contact = ({ contactEmail, contactPara, socialLinks }) => {
 					<li>
 						<a href={socialLinks[1].url}>
 							<FaGithub></FaGithub>
-						</a>
-					</li>
-					<li>
-						<a href={socialLinks[2].url}>
-							<FaCodepen></FaCodepen>
 						</a>
 					</li>
 				</ul>

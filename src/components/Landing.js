@@ -5,6 +5,7 @@ import Work from './Work';
 import Contact from './Contact';
 
 import data from '../yourdata';
+import { TimeLine } from './TimeLine';
 
 const Landing = () => {
 	return (
@@ -14,6 +15,7 @@ const Landing = () => {
 				name={data.landingPageName}
 				paragraph={data.landingPagePara}
 				authorImage={data.landingPageImage}></Home>
+			<TimeLine />
 			<Work projects={data.projects}></Work>
 			<Contact
 				contactEmail={data.contactEmail}

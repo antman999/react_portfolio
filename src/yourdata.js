@@ -15,23 +15,25 @@ export default {
 		'Software Developer with a passion for solving problems and a deeper commitment for using technology to build a better future for animals and our environment. Background in banking and management, strong skills in team building and sales.',
 
 	// Landing Page Image (replace - root/public/assets/photo.jpg)
-	landingPageImage: 'assets/photo.jpg',
+	landingPageImage: 'assets/photo.jpeg',
 	bit: '/assets/bit.png',
 
 	// Change Projects Here
 	projects: [
 		{
 			id: 1, //DO NOT CHANGE THIS (Please)😅
-			title: 'Project One', //Project Title - Add Your Project Title Here
+			title: 'Our Planet', //Project Title - Add Your Project Title Here
 			// Image Size Should be (300X300 px)
-			imageSrc: 'https://via.placeholder.com/300',
+			imageSrc:
+				'https://res.cloudinary.com/sagacity/image/upload/c_crop,h_3264,w_3264,x_808,y_0/c_limit,dpr_3.0,f_auto,fl_lossy,q_80,w_100/shutterstock_413802511_tsrcuh.jpg',
 			//Project URL - Add Your Project Url Here
 			url: 'http://chetanverma.com/',
 		},
 		{
 			id: 2, //DO NOT CHANGE THIS (Please)😅
 			title: 'Project Two',
-			imageSrc: 'https://via.placeholder.com/300',
+			imageSrc:
+				'https://www.israelhayom.com/wp-content/uploads/2020/04/why-cats-are-best-pets-worshipped-animals-1559234295-300x300.jpg',
 			url: 'http://chetanverma.com/',
 		},
 		{
@@ -78,15 +80,11 @@ export default {
 		// Add Or Remove The Link Accordingly
 		{
 			name: 'LinkedIn',
-			url: 'https://www.linkedin.com/in/chetanverma7/',
+			url: 'https://www.linkedin.com/in/anthony-mendoza-a10397124/',
 		},
 		{
 			name: 'Github',
-			url: 'https://www.behance.net/chetanverma',
-		},
-		{
-			name: 'Dribbble',
-			url: 'https://dribbble.com/chetanverma',
+			url: 'https://github.com/antman999',
 		},
 	],
 

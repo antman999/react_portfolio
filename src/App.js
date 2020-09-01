@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import About from './components/About';
 import Landing from './components/Landing';
 import Navbar from './components/Navbar';
 import Work from './components/Work'
