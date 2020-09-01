@@ -22,8 +22,8 @@ const Home = ({ name, paragraph, authorImage }) => {
 								<Typist.Backspace count={20} delay={200} />
 								software developer
 							</span>
-							From New York
 						</Typist>
+						From New York
 					</h1>
 
 					<p>{paragraph}</p>

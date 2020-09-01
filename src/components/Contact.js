@@ -6,7 +6,7 @@ const Contact = ({ contactEmail, contactPara, socialLinks }) => {
 	return (
 		<div className='contact_container'>
 		
-				<h1>lets get in touch.</h1>
+				<h1>Lets get in touch.</h1>
 			
 
 			<p>{contactPara}</p>
