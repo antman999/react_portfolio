@@ -4,11 +4,11 @@ import Typist from 'react-typist';
 
 const Home = ({ name, paragraph, authorImage }) => {
 	return (
-		<div>
+		<div id='home'>
 			<div className='home_container'>
 				<div className='home_head_wrapper'>
 					<h1>
-						Hi, I am Anthony.
+						Hi, I am Anthony Mendoza.
 						<Typist
 							avgTypingDelay={120}
 							cursor={{

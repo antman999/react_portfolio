@@ -1,23 +1,28 @@
 import React from 'react';
-import Header from './Header';
 import Home from './Home';
 import Work from './Work';
 import Contact from './Contact';
-
 import data from '../yourdata';
 import { TimeLine } from './TimeLine';
+import Navbar from './Navbar'
+import Skills from './Skills';
+import Header from './Header';
 
 const Landing = () => {
 	return (
 		<div className='App'>
-			<Header bit={data.bit} name={data.name} contactEmail={data.contactEmail}></Header>
+			<Header bit={data.bit}/> 
 			<Home
+				
 				name={data.landingPageName}
 				paragraph={data.landingPagePara}
 				authorImage={data.landingPageImage}></Home>
-			<TimeLine />
 			<Work projects={data.projects}></Work>
+			<Skills />
+			<TimeLine />
+			
 			<Contact
+				
 				contactEmail={data.contactEmail}
 				contactPara={data.contactPara}
 				socialLinks={data.social}></Contact>

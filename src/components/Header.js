@@ -1,22 +1,15 @@
-import React, { Component } from 'react';
-import Fade from 'react-reveal/Fade';
+import React from 'react'
+import Navbar from './Navbar'
 
-
-import { Link } from 'react-router-dom';
-
-import data from '../yourdata';
-import Navbar from './Navbar';
-
-const Header = ({bit,name, contactEmail})=>{
-    return(
-        <div>
-            <div className="header_container">
-                <Link to="/"><img className='bit' src={bit}></img></Link>
-              <Navbar /> 
-            </div>
-        </div>
-    )
+const Header = (data) => {
+  return (
+		<div>
+			<div className='header_container'>
+				<img className='bit' src={data.bit}></img>
+				<Navbar />
+			</div>
+		</div>
+	);
 }
 
 export default Header
-

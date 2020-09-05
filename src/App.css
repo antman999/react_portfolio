@@ -12,7 +12,7 @@ body {
 }
 
 .App {
-  height: 100vh;
+  height: 100%;
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -73,12 +73,35 @@ a {
   top: 2rem;
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 50vw;
 }
 
 .home_container .home_head_wrapper h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   font-family: "Montserrat";
+}
+
+.titleTimeline{
+  font-family: "Montserrat";
+  font-size:1.9rem;
+  border-bottom: 1px solid white;
+}
+
+.expTitle{
+  font-family: "Montserrat";
+  font-size:.9rem !important;
+  margin-bottom: 1px !important;
+  margin-top: 1px;
+}
+
+.pTimeLine{
+   border-bottom: 1px solid white;
+   margin-bottom: 10px !important;
+}
+
+.vbutton{
+  margin-right: 10px !important;
+  margin-bottom: 10px !important;
 }
 
  .spanny{
@@ -108,6 +131,28 @@ a {
 
 
 /* Work */
+
+.exp_container{
+   display: flex;
+   top: 5rem;
+   width: 80vw;
+   justify-content: center;
+}
+.exph1 {
+  font-size: 3.5rem;
+  font-family: 'Montserrat';
+  margin-bottom: 70px;
+
+}
+
+.skills_container{
+   display: flex;
+   top: 5rem;
+   width: 80vw;
+   justify-content: center;
+}
+
+
 .work_container {
   display: flex;
   flex-direction: column;
@@ -119,7 +164,7 @@ a {
 .work_container h1 {
   font-size: 3.5rem;
   font-family: 'Montserrat';
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .work_container .projects_container {
@@ -267,6 +312,9 @@ a {
   }
 
   .work_container h1 {
+    font-size: 2rem;
+  }
+  .exph1{
     font-size: 2rem;
   }
 
@@ -521,29 +569,7 @@ a {
   }
 }
 
- .card {
-   width: 100%;
-   max-width: 300px;
-   min-width: 200px;
-   height: 250px;
-   background-color: #292929;
-   margin: 10px;
-   border-radius: 10px;
-   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-   border: 2px solid rgba(7, 7, 7, 0.12);
-   font-size: 16px;
-   transition: all 0.3s ease;
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   margin-bottom: 50px;
-   margin-top: 30px;
- }
-
+ 
 
  .icon {
    margin: 0 auto;
@@ -576,38 +602,136 @@ a {
    font-size: 48px;
  }
 
- .card .title {
-   width: 100%;
-   margin: 0;
-   text-align: center;
-   margin-top: 30px;
-   color: white;
-   font-weight: 600;
-   text-transform: uppercase;
-   letter-spacing: 4px;
+ .cards-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
  }
 
- .card .text {
-   width: 80%;
-   margin: 0 auto;
-   font-size: 13px;
-   text-align: center;
-   margin-top: 20px;
+ .card {
+   box-sizing: border-box;
+   height: auto;
+   width: calc(100% / 4);
+   box-shadow: 0 10px 20px rgba(121, 114, 114, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   margin: 20px;
+   border-radius: 10px;
+   background-color:#212121;
+ }
+
+ .card .header {
+   height: auto;
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+   min-height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+   background: coral;
    color: white;
-   font-weight: 200;
-   letter-spacing: 2px;
+   font-family: 'Playfair Display', serif;
+   font-size: 25px;
+   clip-path: circle(60% at 0% 0%);
+   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+ }
+
+ .card .header h4 {
    opacity: 0;
-   max-height: 0;
-   transition: all 0.3s ease;
+   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
  }
 
+ .card:hover .header {
+   clip-path: circle(100% at 50% 50%);
+   background: salmon;
+ }
 
- .card:hover .text {
-   transition: all 0.3s ease;
+ .card:hover .header h4 {
    opacity: 1;
-   max-height: 40px;
  }
 
+ .card .header h3,
+ .card .header h4 {
+   margin: 0 !important;
+   padding: 0;
+ }
 
+ .card .description {
+   padding: 20px;
+   font-family: 'Nunito', sans-serif;
 
+ }
 
+ /* Circle convert into card */
+ .card.dot {
+   box-shadow: none;
+   clip-path: circle(19% at 24% 24%);
+   transition: all ease-in-out 0.5s;
+   background: royalblue;
+   color: white;
+ }
+
+ .card.dot:hover {
+   background: darkblue;
+   clip-path: circle(100%);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+ }
+
+ .card.dot .header {
+   height: auto;
+   min-height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0px;
+   background: unset;
+   color: white;
+   font-family: 'Playfair Display', serif;
+   font-size: 30px;
+
+ }
+
+ /* dual colors */
+ .card.dual .header {
+   background: #F21B3F;
+ }
+
+ .card.dual .description {
+   clip-path: circle(20% at 100% 100%);
+   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
+   background: blue;
+   height: auto;
+   transition: all ease-in-out .7s;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   color: white;
+ }
+
+ .card.dual:hover .description {
+   clip-path: circle(100% at 50% 0%);
+   background: purple;
+ }
+
+ .card.dual:hover .header {
+   clip-path: circle(100% at 50% 50%);
+   background: purple;
+ }
+
+ @media(max-width: 768px) {
+   .cards-wrapper {
+     flex-direction: column;
+   }
+
+   .card {
+     width: 100%;
+   }
+ }
+
+ .progress-line__outer {
+   display: flex;
+   margin: 15px auto;
+ }
+
+ .progress-line__label{
+   font-size:17px;
+   font-family: 'Montserrat';
+ }
