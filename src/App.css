@@ -602,136 +602,45 @@ a {
    font-size: 48px;
  }
 
- .cards-wrapper {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
- }
-
- .card {
-   box-sizing: border-box;
-   height: auto;
-   width: calc(100% / 4);
-   box-shadow: 0 10px 20px rgba(121, 114, 114, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-   margin: 20px;
-   border-radius: 10px;
-   background-color:#212121;
- }
-
- .card .header {
-   height: auto;
-   border-top-right-radius: 10px;
-   border-top-left-radius: 10px;
-   min-height: 200px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding: 20px;
-   background: coral;
-   color: white;
-   font-family: 'Playfair Display', serif;
-   font-size: 25px;
-   clip-path: circle(60% at 0% 0%);
-   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
- }
-
- .card .header h4 {
-   opacity: 0;
-   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
- }
-
- .card:hover .header {
-   clip-path: circle(100% at 50% 50%);
-   background: salmon;
- }
-
- .card:hover .header h4 {
-   opacity: 1;
- }
-
- .card .header h3,
- .card .header h4 {
-   margin: 0 !important;
-   padding: 0;
- }
-
- .card .description {
-   padding: 20px;
-   font-family: 'Nunito', sans-serif;
+ .skills-container {
+   max-width: 1050px;
+   margin: 0 auto;
 
  }
 
- /* Circle convert into card */
- .card.dot {
-   box-shadow: none;
-   clip-path: circle(19% at 24% 24%);
-   transition: all ease-in-out 0.5s;
-   background: royalblue;
-   color: white;
- }
-
- .card.dot:hover {
-   background: darkblue;
-   clip-path: circle(100%);
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
- }
-
- .card.dot .header {
-   height: auto;
-   min-height: 200px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding: 0px;
-   background: unset;
-   color: white;
-   font-family: 'Playfair Display', serif;
-   font-size: 30px;
+ .skills {
+   background: #121213;
 
  }
 
- /* dual colors */
- .card.dual .header {
-   background: #F21B3F;
- }
 
- .card.dual .description {
-   clip-path: circle(20% at 100% 100%);
-   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
-   background: blue;
-   height: auto;
-   transition: all ease-in-out .7s;
-   border-bottom-right-radius: 10px;
-   border-bottom-left-radius: 10px;
-   color: white;
- }
 
- .card.dual:hover .description {
-   clip-path: circle(100% at 50% 0%);
-   background: purple;
- }
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.card {
+  flex: 1;
+  transition: all 200ms ease;
+  padding: 2.5rem;
+  background: rgb(65, 65, 65);
+  /* border: 1px solid #121213; */
+  border-radius: 6px;
+box-shadow: 0 1px 7px #66FCF1;
+  margin: 0.5rem;
+  max-height: 55px;
+  max-width: 55px;
+  text-align: center;
+  color: #ffffff;
 
- .card.dual:hover .header {
-   clip-path: circle(100% at 50% 50%);
-   background: purple;
- }
-
- @media(max-width: 768px) {
-   .cards-wrapper {
-     flex-direction: column;
-   }
-
-   .card {
-     width: 100%;
-   }
- }
-
- .progress-line__outer {
-   display: flex;
-   margin: 15px auto;
- }
-
- .progress-line__label{
-   font-size:17px;
-   font-family: 'Montserrat';
- }
+}
+/* @media screen and (min-width:650px) {.skills .card{ 
+  flex: 1 1 calc(25% - 1rem);
+}
+} */
+.card:hover {
+  border: 1px solid  #66FCF1;
+  padding: 3rem;
+}
