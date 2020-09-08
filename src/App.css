@@ -636,10 +636,13 @@ box-shadow: 0 1px 7px #66FCF1;
   color: #ffffff;
 
 }
-/* @media screen and (min-width:650px) {.skills .card{ 
-  flex: 1 1 calc(25% - 1rem);
+
+@media screen and (min-width: 40px) and (max-width:800px) {
+ .skills .card {
+   flex: 1 1 calc(1rem);
+   font-size: 10px;
+ }
 }
-} */
 .card:hover {
   border: 1px solid  #66FCF1;
   padding: 3rem;
